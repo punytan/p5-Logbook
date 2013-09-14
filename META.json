@@ -1,5 +1,5 @@
 {
-   "abstract" : "Blah blah blah",
+   "abstract" : "Lightweight logging library",
    "author" : [
       "punytan <punytan@gmail.com>"
    ],
@@ -36,16 +36,41 @@
       },
       "runtime" : {
          "requires" : {
+            "Constant::Exporter" : "0",
+            "Fcntl" : "0",
+            "File::Basename" : "0",
+            "File::Path" : "0",
+            "File::Spec" : "0",
+            "Hash::Flatten" : "0",
+            "IO::Handle" : "0",
+            "POSIX" : "0",
+            "Scalar::Util" : "0",
+            "Sys::Hostname" : "0",
+            "Time::HiRes" : "0",
+            "Time::Piece" : "0",
+            "parent" : "0",
             "perl" : "5.008005"
          }
       },
       "test" : {
          "requires" : {
+            "Test::LoadAllModules" : "0",
             "Test::More" : "0.88"
          }
       }
    },
    "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/punytan/p5-Logbook/issues"
+      },
+      "homepage" : "https://github.com/punytan/p5-Logbook",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/punytan/p5-Logbook.git",
+         "web" : "https://github.com/punytan/p5-Logbook"
+      }
+   },
    "version" : "0.01"
 }
 
