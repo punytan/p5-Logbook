@@ -3,6 +3,12 @@ use warnings;
 use Test::More;
 use Logbook::Handler;
 
-is ref Logbook::Handler->new, 'Logbook::Handler';
+my $handler = Logbook::Handler->new(
+    formatter => {
+        Default => {}
+    }
+);
+
+is ref $handler, 'Logbook::Handler';
 
 done_testing;
